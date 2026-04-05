@@ -15,3 +15,6 @@ class Backend:
         response = f"Echo: {message}"
         self.logger.info(f"Sending response: {response}")
         return response
+
+    def get_latest_chat(self) -> str:
+        return "Welcome to P2Py! This is the latest chat message."
