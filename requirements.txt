@@ -1,0 +1,11 @@
+types-protobuf==7.34.1.20260403
+types-requests==2.33.0.20260402
+typing_extensions==4.15.0
+u-msgpack-python==2.8.0
+uc-micro-py==2.0.0
+urllib3==2.6.3
+varint==1.0.2
+websockets==16.0
+wsproto==1.3.2
+zeroconf==0.147.3
+zipp==3.23.0
