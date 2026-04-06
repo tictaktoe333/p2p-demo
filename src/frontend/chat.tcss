@@ -1,86 +1,181 @@
+$bg-dark: #0e0e0e;
+$bg-mid: #111111;
+$bg-light: #1a1a1a;
+$bg-hover: #1e1e1e;
+$bg-active: #1e3a2a;
+$bg-active-hover: #2a4a3a;
+$border-dim: #2a2a2a;
+$border-active: #5dff9a;
+$text-dim: #666666;
+$text-mid: #aaaaaa;
+$text-bright: #eeeeee;
+$accent-green: #5dff9a;
+$accent-orange: #ff9a5d;
+
 Screen {
-    background: #0e0e0e;
+    background: $bg-dark;
 }
 
 #sidebar {
     width: 22;
-    border-right: solid #2a2a2a;
-    background: #111111;
+    border-right: solid $border-dim;
+    background: $bg-mid;
 }
 
 #sidebar-title {
-    background: #1a1a1a;
-    color: #666666;
+    background: $bg-light;
+    color: $text-dim;
     text-style: bold;
     padding: 0 1;
     height: 1;
-    border-bottom: solid #2a2a2a;
+    border-bottom: solid $border-dim;
+}
+
+#add-contact-btn {
+    height: 5;
+    background: $bg-mid;
+    color: $accent-green;
+    border: none;
+    border-top: solid $border-dim;
+    width: 1fr;
+    text-style: none;
+}
+
+#add-contact-btn:hover {
+    background: $bg-active;
 }
 
 ListView {
-    background: #111111;
+    background: $bg-mid;
     border: none;
     height: 1fr;
 }
 
 ListView > ListItem {
-    background: #111111;
-    color: #aaaaaa;
+    background: $bg-mid;
+    color: $text-mid;
     padding: 0 1;
     height: 1;
 }
 
 ListView > ListItem:hover {
-    background: #1e1e1e;
-    color: #eeeeee;
+    background: $bg-hover;
+    color: $text-bright;
 }
 
 ListView > ListItem.--highlight {
-    background: #1e3a2a;
-    color: #5dff9a;
+    background: $bg-active;
+    color: $accent-green;
 }
 
 ListView:focus > ListItem.--highlight {
-    background: #1e3a2a;
-    color: #5dff9a;
+    background: $bg-active;
+    color: $accent-green;
 }
 
 #chat-area {
     width: 1fr;
-    background: #0e0e0e;
+    background: $bg-dark;
 }
 
 #chat-header {
     height: 1;
-    background: #1a1a1a;
-    color: #5dff9a;
+    background: $bg-light;
+    color: $accent-green;
     text-style: bold;
     padding: 0 1;
-    border-bottom: solid #2a2a2a;
+    border-bottom: solid $border-dim;
 }
 
 #message-log {
     height: 1fr;
-    background: #0e0e0e;
+    background: $bg-dark;
     border: none;
     padding: 0 1;
 }
 
 #input-bar {
-    height: 4;
-    border-top: solid #2a2a2a;
-    background: #111111;
+    height: 5;
+    border-top: solid $border-dim;
+    background: $bg-mid;
     padding: 0 1;
     align: left middle;
 }
 
 #msg-input {
     width: 1fr;
-    background: #1a1a1a;
-    border: solid #2a2a2a;
-    color: #eeeeee;
+    background: $bg-light;
+    border: solid $border-dim;
+    color: $text-bright;
 }
 
 #msg-input:focus {
-    border: solid #5dff9a;
+    border: solid $accent-green;
+}
+
+/* --- Modal --- */
+
+AddContactModal {
+    align: center middle;
+}
+
+#modal-container {
+    width: 50;
+    height: auto;
+    background: $bg-light;
+    border: solid $accent-green;
+    padding: 1 2;
+}
+
+#modal-title {
+    color: $accent-green;
+    text-style: bold;
+    height: 1;
+    margin-bottom: 1;
+}
+
+.field-label {
+    color: $text-dim;
+    height: 1;
+    margin-top: 1;
+}
+
+.modal-input {
+    background: $bg-dark;
+    border: solid $border-dim;
+    color: $text-bright;
+    width: 1fr;
+    height: 3;
+}
+
+.modal-input:focus {
+    border: solid $accent-green;
+}
+
+#modal-buttons {
+    margin-top: 1;
+    height: 3;
+    align: right middle;
+}
+
+#btn-cancel {
+    background: $border-dim;
+    border: none;
+    color: $text-mid;
+    margin-right: 1;
+}
+
+#btn-cancel:hover {
+    background: $bg-hover;
+    color: $text-bright;
+}
+
+#btn-add {
+    background: $bg-active;
+    border: none;
+    color: $accent-green;
+}
+
+#btn-add:hover {
+    background: $bg-active-hover;
 }
