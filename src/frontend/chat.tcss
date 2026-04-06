@@ -1,86 +1,86 @@
-    Screen {
-        background: #0e0e0e;
-    }
+Screen {
+    background: #0e0e0e;
+}
 
-    #sidebar {
-        width: 22;
-        border-right: solid #2a2a2a;
-        background: #111111;
-    }
+#sidebar {
+    width: 22;
+    border-right: solid #2a2a2a;
+    background: #111111;
+}
 
-    #sidebar-title {
-        background: #1a1a1a;
-        color: #666666;
-        text-style: bold;
-        padding: 0 1;
-        height: 1;
-        border-bottom: solid #2a2a2a;
-    }
+#sidebar-title {
+    background: #1a1a1a;
+    color: #666666;
+    text-style: bold;
+    padding: 0 1;
+    height: 1;
+    border-bottom: solid #2a2a2a;
+}
 
-    ListView {
-        background: #111111;
-        border: none;
-        height: 1fr;
-    }
+ListView {
+    background: #111111;
+    border: none;
+    height: 1fr;
+}
 
-    ListView > ListItem {
-        background: #111111;
-        color: #aaaaaa;
-        padding: 0 1;
-        height: 1;
-    }
+ListView > ListItem {
+    background: #111111;
+    color: #aaaaaa;
+    padding: 0 1;
+    height: 1;
+}
 
-    ListView > ListItem:hover {
-        background: #1e1e1e;
-        color: #eeeeee;
-    }
+ListView > ListItem:hover {
+    background: #1e1e1e;
+    color: #eeeeee;
+}
 
-    ListView > ListItem.--highlight {
-        background: #1e3a2a;
-        color: #5dff9a;
-    }
+ListView > ListItem.--highlight {
+    background: #1e3a2a;
+    color: #5dff9a;
+}
 
-    ListView:focus > ListItem.--highlight {
-        background: #1e3a2a;
-        color: #5dff9a;
-    }
+ListView:focus > ListItem.--highlight {
+    background: #1e3a2a;
+    color: #5dff9a;
+}
 
-    #chat-area {
-        width: 1fr;
-        background: #0e0e0e;
-    }
+#chat-area {
+    width: 1fr;
+    background: #0e0e0e;
+}
 
-    #chat-header {
-        height: 1;
-        background: #1a1a1a;
-        color: #5dff9a;
-        text-style: bold;
-        padding: 0 1;
-        border-bottom: solid #2a2a2a;
-    }
+#chat-header {
+    height: 1;
+    background: #1a1a1a;
+    color: #5dff9a;
+    text-style: bold;
+    padding: 0 1;
+    border-bottom: solid #2a2a2a;
+}
 
-    #message-log {
-        height: 1fr;
-        background: #0e0e0e;
-        border: none;
-        padding: 0 1;
-    }
+#message-log {
+    height: 1fr;
+    background: #0e0e0e;
+    border: none;
+    padding: 0 1;
+}
 
-    #input-bar {
-        height: 3;
-        border-top: solid #2a2a2a;
-        background: #111111;
-        padding: 0 1;
-        align: left middle;
-    }
+#input-bar {
+    height: 4;
+    border-top: solid #2a2a2a;
+    background: #111111;
+    padding: 0 1;
+    align: left middle;
+}
 
-    #msg-input {
-        width: 1fr;
-        background: #1a1a1a;
-        border: solid #2a2a2a;
-        color: #eeeeee;
-    }
+#msg-input {
+    width: 1fr;
+    background: #1a1a1a;
+    border: solid #2a2a2a;
+    color: #eeeeee;
+}
 
-    #msg-input:focus {
-        border: solid #5dff9a;
-    }
+#msg-input:focus {
+    border: solid #5dff9a;
+}

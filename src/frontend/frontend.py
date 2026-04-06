@@ -1,5 +1,5 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Header, Footer, Input, ListView, ListItem, Label, RichLog, Static
+from textual.widgets import Header, Input, ListView, ListItem, Label, RichLog, Static
 from textual.containers import Horizontal, Vertical
 from textual.reactive import reactive
 from textual import on
@@ -54,7 +54,6 @@ class Frontend(App):
                 yield RichLog(id="message-log", highlight=True, markup=True, wrap=True)
                 with Horizontal(id="input-bar"):
                     yield Input(placeholder="message alice...", id="msg-input")
-        yield Footer()
 
     def on_mount(self) -> None:
         self.load_session(self.active_session)
